@@ -4,28 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="Mustafa Mahmood" name="author">
   <meta content="Official MusTech Inc. Site. A Science, Technology and Engineering Company, Working to make this world more futuristic and modern and a better place to live in." name="description">
   <meta content="MusTech Inc., MusTech, Mustafa Mahmood, Technology, Science, Engineering, future, space" name="keywords">
+  <meta content="Mustafa Mahmood" name="author">
 
-  <title>Sign Up | MusTech Inc.</title>
+  <title>MusTech Inc. | SignUp</title>
 
-  <link href="../assets/img/logo.png" rel="icon">
+  <link href="https://raw.githubusercontent.com/MusTech-Inc/MusTech-Website/main/assets/img/logo.png" rel="icon">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/main/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/main/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/main/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/main/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/main/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/main/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="/main/css/style.css" rel="stylesheet">
+  <link href="/main/css/auth.css" rel="stylesheet">
 
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
-
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link href="../assets/css/auth.css" rel="stylesheet">
-
   <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
 
 </head>
@@ -35,34 +34,40 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="index.html">MusTech Inc.</a></h1>
-      <a href="index.html" class="logo"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo"><img src="https://raw.githubusercontent.com/MusTech-Inc/MusTech-Website/main/assets/img/logo.png" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link" href="researches/research.html">Research</a></li>
           <li><a class="nav-link" href="education.html">Education</a></li>
-          <li><a class="nav-link scrollto " href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
           <li><a class="nav-link" href="projects/project.html">Projects</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li class="dropdown"><a href="#"><span>More :-)</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-              <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-              <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-              <li><a href="#">More Coming Soon....</a></li>
-              <li class="dropdown"><a href="#"><span>More...</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">More Coming Soon</a></li>
-                  <li><a href="#">More Coming Soon</a></li>
-                  <li><a href="#">More Coming Soon</a></li>
-                  <li><a href="#">More Coming Soon</a></li>
-                  <li><a href="#">More Coming Soon</a></li>
-                </ul>
-              </li>
+              <div class="col-4">
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+              </div>
+              <div class="col-4">
+                <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                <li><a class="nav-link" href="#">More Coming Soon....</a></li>
+              </div>
+              <div class="col-4">
+                <li class="dropdown"><a href="#"><span>More...</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">More Coming Soon</a></li>
+                    <li><a href="#">More Coming Soon</a></li>
+                    <li><a href="#">More Coming Soon</a></li>
+                    <li><a href="#">More Coming Soon</a></li>
+                    <li><a href="#">More Coming Soon</a></li>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </li>
-          <li><a class="nav-link getstarted" href="signup.html">Sign Up</a></li>
+          <li><a class="getstarted" href="auth.html">Sign Up</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -91,9 +96,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>MusTech Inc.</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
+              CC-19 GTB, Nagar Kareli<br>
+              Allahabad, Uttar Pradesh<br>
+              India <br><br>
               <strong>Phone:</strong> +91 900 538 0846<br>
               <strong>Email:</strong> mustech986@gmail.com<br>
             </p>
@@ -102,31 +107,36 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Jump To...</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="researches/research.html">Research</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="projects/project.html">Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio.html">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="education.html">Education</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Software Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Subscribe for Updates</h4>
-            <p>Enter Your Email Below to get STEM updates Rarely in your mailbox</p>
+            <p>Enter Your Email Below to get STEM updates rarely in your mailbox</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
+            <div class="footer-links">
+              <ul>
+                <br>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
           </div>
 
         </div>
@@ -141,16 +151,17 @@
             &copy; Copyright <strong><span>MusTech Inc. 2021</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
+            Programmed using HTML5, CSS3, JS/ES6, etc. in Visual Studio Code by Mustafa @ TechnoSmarto.<br>
             Code OpenSource under MIT License in <a href="https://github.com/MusTech-Inc/MusTech-Website" target="_blank"><bold><i class="bx bxl-github"></i> Repository </bold></a><br>
-            <a href="https://storyset.com/technology" target="_blank">Illustration by Freepik Storyset</a><br>
+            <a href="https://storyset.com/technology" target="_blank">Illustration by Freepik Storyset</a> | 
             Template by <a href="https://bootstrapmade.com/" target="_blank"><bold>BootstrapMade</bold></a>
           </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/technosmarto" class="google-plus"><i class="bx bxl-github"></i></a>
+          <a href="#" class="googleplus"><i class="bx bxl-google"></i></a>
+          <a href="https://github.com/technosmarto" class="github"><i class="bx bxl-github"></i></a>
           <a href="https://linkedin.com/in/technosmarto" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
@@ -161,21 +172,24 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
+  <script src="/main/vendor/aos/aos.js"></script>
+  <script src="/main/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/main/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/main/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/main/vendor/php-email-form/validate.js"></script>
+  <script src="/main/vendor/purecounter/purecounter.js"></script>
+  <script src="/main/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="/__/firebase/8.4.1/firebase-app.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
 
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/purecounter/purecounter.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <script src="../assets/js/auth.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="/main/js/auth.js"></script>
+  <script src="/main/js/main.js"></script>
 
 </body>
 

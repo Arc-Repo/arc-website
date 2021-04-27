@@ -1,7 +1,3 @@
-body {
-    background-color: rgba(162, 161, 207, 0.6);
-}
-
 div#firebaseui-auth-container {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -9,7 +5,7 @@ div#firebaseui-auth-container {
     padding-right: 25px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-image: url("../img/ironMan.jpg");
+    background-image: url("https://raw.githubusercontent.com/MusTech-Inc/MusTech-Website/assets/ironMan.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

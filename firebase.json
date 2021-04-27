@@ -2,14 +2,9 @@
   "hosting": {
     "redirects": [
       {
-        "source" : "",
-        "destination" : "",
+        "source" : "contact.html",
+        "destination" : "404.html",
         "type" : 301
-      },
-      {
-        "source" : "",
-        "destination" : "",
-        "type" : 302
       }
     ],
     "public": "main",
