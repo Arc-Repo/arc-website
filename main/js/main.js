@@ -3,16 +3,32 @@
 
   new PureCounter();
 
-  const gridList = document.querySelectorAll(".grid");
-  for (let index = 0; index < gridList.length; index++) {
-    const grid = gridList[index];
-    const masonry = new Masonry(grid, {
-      itemSelector: '.grid-item',
-      gutter: 10,
-      fitWidth: true,
-      horizontalOrder: false,
-      transitionDuration: '0.8s'
-    });
+  var imgs = document.images,
+    len = imgs.length,
+    counter = 0;
+
+  [].forEach.call(imgs, function(img) {
+    if(img.complete)
+      incrementCounter();
+    else
+      img.addEventListener('load', incrementCounter, false);
+  });
+
+  function incrementCounter() {
+    counter++;
+    if ( counter === len ) {
+      const gridList = document.querySelectorAll(".grid");
+      for (let index = 0; index < gridList.length; index++) {
+        const grid = gridList[index];
+        const masonry = new Masonry(grid, {
+          itemSelector: '.grid-item',
+          gutter: 10,
+          fitWidth: true,
+          horizontalOrder: false,
+          transitionDuration: '0.8s'
+        });
+      };    
+    }
   }
 
   const select = (el, all = false) => {
@@ -140,7 +156,7 @@
     });
   }
 
-  // new Swiper('.testimonials-slider', {
+  // new Swiper('.counts-slider', {
   //   speed: 600,
   //   loop: true,
   //   autoplay: {

@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"/>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="6d9a3235-3c0f-40e0-8594-ceaae36b5a70"></script>
   <script>
     !function(e,t,n,a,c,r){function o(){var e={a:arguments,q:[]},t=this.push(e)
     ;return"number"!=typeof t?t:o.bind(e.q)}
@@ -31,7 +30,30 @@
   <script type="text/javascript" src="js/app.js"></script>
 </head>  
 <body data-ng-controller="team">
-  <div data-ng-include="'components/header.html'"></div>
+  <div id="header" class="fixed-top inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Arc Inc.</a></h1>
+      <a href="index.html" class="logo"><img src="https://raw.githubusercontent.com/Arc-Repo/arc-website/main/assets/img/Logo Circle-min.png" alt="logo" class="img-fluid"></a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/index.html#hero">Home</a></li>
+          <li><a class="nav-link" href="/404.html">Research🔬</a></li>
+          <li><a class="nav-link" href="/404.html">Projects🛠️</a></li>
+          <li><a class="nav-link" href="/404.html">Products☢️</a></li>
+          <li><a class="nav-link" href="/team.html">Team🦸🏻‍♀️</a></li>
+          <li class="dropdown"><a href="#"><span>More🔽</span></i></a>
+          <ul>
+            <li><a class="nav-link scrollto" href="/index.html#about">About</a></li>
+            <li><a class="nav-link scrollto" href="/index.html#pricing">Pricing</a></li>
+            <li><a class="nav-link scrollto" href="/index.html#contact">Contact</a></li>
+            <li class="dropdown"><a href="#"><span>More...</span> <i class="bi bi-chevron-right"></i></a><ul></ul></li>
+          </ul>
+          <li><a class="getstarted" href="404.html">Start Up</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </div>
   <main id="main" class="inner-pages">
     <h1 class="text-center">Amazing Team</h1>
     <div class="team grid">
@@ -59,6 +81,8 @@
     </div>
     <h1 class="text-center">Board of Directors</h1>
     <div class="board grid"></div>
+    <h1 class="text-center">STEM Consultants</h1>
+    <div class="advisors grid"></div>
     <h1 class="text-center">Commercial Partners</h1>
     <div class="partner grid"></div>
     <h1 class="text-center">Volunteers</h1>
@@ -92,5 +116,6 @@
     const analytics = getAnalytics(app);
   </script>
   <script src="js/main.js"></script>
+  <script src="https://app.termly.io/embed.min.js" type="text/javascript" data-auto-block="on" data-website-uuid="6d9a3235-3c0f-40e0-8594-ceaae36b5a70"></script>
 </body>
 </html>
